@@ -1,0 +1,53 @@
+:root { --accent: #0b7fb3; }
+* { box-sizing: border-box; }
+body {
+  margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f5f6f8; color: #1c1e21; line-height: 1.45;
+}
+header { background: #1c1e21; color: #fff; padding: 18px 20px; }
+header h1 { margin: 0; font-size: 1.35rem; }
+.sub { margin: 6px 0 0; color: #cfd2d6; font-size: 0.9rem; }
+
+.profile {
+  display: flex; gap: 10px; flex-wrap: wrap; padding: 10px 20px;
+  background: #e8eaee; border-radius: 8px; margin: 10px 0;
+}
+.pill { background: #dfe3e8; border-radius: 999px; padding: 3px 12px; font-size: 0.82rem; }
+.pill b { font-weight: 700; }
+.pill-i { background: #d4f7df; color: #116b38; }
+.pill-n { background: #e4e6ea; color: #444; }
+.pill-x { background: #fbdcdb; color: #a3332b; }
+.pill-d { background: #e0e4ec; color: #333; }
+
+main { padding: 12px 20px; }
+.day { margin: 6px 0 18px; border: 1px solid #d5dae0; border-radius: 10px; padding: 10px 14px; }
+.d-head { margin: 0 0 2px; font-size: 1.02rem; font-weight: 650; }
+.d-count, .d-dots { color: #6a7178; font-size: 0.82rem; margin-left: 8px; }
+.d-dots { margin-top: 2px; }
+.d-dots span { margin-right: 6px; }
+
+.topic {
+  border: 1px solid #e2e5ea; border-radius: 8px; margin: 8px 0; padding: 10px 12px;
+  background: #fff;
+}
+.t-title { font-weight: 650; font-size: 0.98rem; }
+.t-cat { display: inline-block; background: #eef1f5; color: #4a5160; border-radius: 4px; padding: 0 7px; font-size: 0.75rem; margin-top: 2px; }
+.t-desc { color: #4a5160; font-size: 0.86rem; margin-top: 3px; }
+.t-url { color: #0b7fb3; font-size: 0.78rem; text-decoration: none; }
+.t-rate { margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap; }
+
+.rate {
+  border: 1px solid #c9cfd6; background: #fbfbfc; color: #333; cursor: pointer;
+  border-radius: 999px; padding: 4px 12px; font-size: 0.8rem;
+}
+.rate:hover { border-color: #0b7fb3; }
+.rate.active { font-weight: 700; }
+.rate.interesting.active { background: #d4f7df; border-color: #116b38; color: #116b38; }
+.rate.neutral.active     { background: #eceef2; border-color: #8a919a; color: #333; }
+.rate.not_interested.active { background: #fbdcdb; border-color: #a3332b; color: #a3332b; }
+
+footer { padding: 14px 20px; color: #6a7178; font-size: 0.82rem; }
+.legend { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.legend .rate { cursor: default; opacity: 0.85; }
+
+.err { color: #a3332b; font-weight: 650; }

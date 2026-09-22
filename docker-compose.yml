@@ -1,0 +1,11 @@
+services:
+  tweakers-briefing:
+    image: ghcr.io/onlinefabster/tweakers-briefing:latest
+    container_name: tweakers-briefing
+    restart: unless-stopped
+    ports:
+      - "13400:8000"
+    volumes:
+      - /docker/tweakers-briefing/data:/data
+    environment:
+      DATABASE_PATH: /data/topics.db

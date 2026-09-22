@@ -1,0 +1,12 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Data must never be committed
+.docker/tweakers-briefing/
+*.db
+*.db-wal
+*.db-shm
+# Env
+.env

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tweakers Briefing — ratings</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header>
+  <h1>Tweakers Ochtendbrief</h1>
+  <p class="sub">Beoordeel per onderwerp of je het interessant vond. Dat bepaalt hoeveel Hermes er de volgende ochtend over vertelt.</p>
+</header>
+
+<section id="profile" class="profile" hidden>
+  <span class="pill pill-i">interessant <b id="cnt-i">0</b></span>
+  <span class="pill pill-n">neutraal <b id="cnt-n">0</b></span>
+  <span class="pill pill-x">niet interessant <b id="cnt-x">0</b></span>
+  <span class="pill pill-d">dagen <b id="cnt-d">0</b></span>
+</section>
+
+<main id="days"></main>
+
+<footer>
+  <div class="legend">
+    <button class="rate interesting"  disabled>🟢 Interessant</button>
+    <button class="rate neutral"      disabled>⚪ Neutraal</button>
+    <button class="rate not_interested" disabled>🔴 Niet interessant</button>
+  </div>
+</footer>
+
+<noscript>Deze dashboard heeft JavaScript nodig.</noscript>
+<script src="/static/app.js"></script>
+</body>
+</html>
