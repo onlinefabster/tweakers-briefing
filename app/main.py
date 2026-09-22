@@ -7,6 +7,7 @@ Serves:
   GET  /                       single-page dashboard
 """
 import os
+import sys
 from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
@@ -14,7 +15,11 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 
-import db
+# Support both `uvicorn app.main:app` (from repo root) and `uvicorn main:app` (from app/ dir).
+try:
+    import db  # noqa: F401
+except ModuleNotFoundError:
+    from . import db  # type: ignore  # noqa: F401
 
 app = FastAPI(title="Tweakers Briefing Dashboard", version="1.0.0")
 
