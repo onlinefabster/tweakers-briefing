@@ -3,6 +3,7 @@ services:
     image: ghcr.io/onlinefabster/tweakers-briefing:latest
     container_name: tweakers-briefing
     restart: unless-stopped
+    user: "1000:1000"
     ports:
       - "13400:8000"
     volumes:
